@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    {{>navbar}}
+  <div class="container">
+    <h2 class="mt-4 mb-4">User Registration</h2>
+    <form action="/register" method="post">
+      <div class="form-group">
+        <label for="inputName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" name="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="inputName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" name="lastname" required>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" name="confirmpassword" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+  
+  <!-- Bootstrap JavaScript (Optional, only if you need Bootstrap JS functionality) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
